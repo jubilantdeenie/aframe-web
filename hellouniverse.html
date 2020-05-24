@@ -35,15 +35,15 @@
     <!--            <a-box depth="2" height="2" width="2" color="lightblue" position="0 8 0" scale="3 3 3" rotation="0 45 0"></a-box>-->
     <!--            <a-box depth="2" height="2" width="2" color="lightgreen" position="0 0 8" scale="4 1 2" rotation="0 0 45"></a-box>-->
 
-    <a-assets>
+    <!--    <a-assets>-->
 
-        <img id="succulents" src="/succulents.jpg">
-        <img id="dahlia" src="/dahlia-crop.jpg">
-        <video id="heart" src="heart.mp4"></video>
-        <video id="lions" src="lions.mp4"></video>
+    <!--        <img id="succulents" src="/succulents.jpg">-->
+    <!--        <img id="dahlia" src="/dahlia-crop.jpg">-->
+    <!--        <video id="heart" src="heart.mp4"></video>-->
+    <!--        <video id="lions" src="lions.mp4"></video>-->
 
 
-    </a-assets>
+    <!--    </a-assets>-->
 
     <!--    <a-sphere radius="2" src="#heart" width="6"></a-sphere>-->
 
@@ -57,26 +57,54 @@
     <!--    <a-entity geometry="primitive:torusKnot;p=3;q:7;" material="opacity:0.7;color:red;"></a-entity>-->
 
 
-<!--    Using mixins to assign properties -->
-    <a-assets>
+    <!--    Using mixins to assign properties -->
+    <!--    <a-assets>-->
 
-        <a-mixin geometry="height:5" id="tall"></a-mixin>
-        <a-mixin geometry="width:5" id="wide"></a-mixin>
-        <a-mixin geometry="height:2" id="short"></a-mixin>
-        <a-mixin geometry="width:2" id="narrow"></a-mixin>
-        <a-mixin geometry="primitive:box" id="cube"></a-mixin>
-        <a-mixin geometry="color:red" id="red"></a-mixin>
-        <a-mixin geometry="color:yellow" id="yellow"></a-mixin>
+    <!--        <a-mixin geometry="height:5" id="tall"></a-mixin>-->
+    <!--        <a-mixin geometry="width:5" id="wide"></a-mixin>-->
+    <!--        <a-mixin geometry="height:2" id="short"></a-mixin>-->
+    <!--        <a-mixin geometry="width:2" id="narrow"></a-mixin>-->
+    <!--        <a-mixin geometry="primitive:box" id="cube"></a-mixin>-->
+    <!--        <a-mixin geometry="color:red" id="red"></a-mixin>-->
+    <!--        <a-mixin geometry="color:yellow" id="yellow"></a-mixin>-->
 
-    </a-assets>
+    <!--    </a-assets>-->
 
-    <a-entity mixin = "cube tall narrow red" position="3 0 0"></a-entity>
-    <a-entity mixin = "cube short wide red"  position="0 3 0 "></a-entity>
-    <a-entity entity mixin = "cube short narrow" position="1 0 4"></a-entity>
+    <!--    <a-entity mixin = "cube tall narrow red" position="3 0 0"></a-entity>-->
+    <!--    <a-entity mixin = "cube short wide red"  position="0 3 0 "></a-entity>-->
+    <!--    <a-entity entity mixin = "cube short narrow" position="1 0 4"></a-entity>-->
 
 
-    <a-sky src="clouds.jpg"></a-sky>
-    <!--<a-sky src="#dahlia"></a-sky>-->
+    <!--    Dragon  -->
+    <!--    <a-assets>-->
+
+    <!--        <a-asset-item id="test-obj" src="orange-dragon-obj/orange-dragon.obj"></a-asset-item>-->
+    <!--        <a-asset-item id="test-mtl" src="orange-dragon-obj/orange-dragon.mtl"></a-asset-item>-->
+
+    <!--    </a-assets>-->
+
+    <!--    <a-entity obj-model="obj: #test-obj; mtl: #test-mtl" scale="0.1 0.1 0.1" rotation="0 90 0">-->
+
+    <!--    <a-animation attribute="scale" from="1 1 1" to="0.1 0.1 0.1" repeat="indefinate" dur="5000"></a-animation>-->
+
+    <!--    </a-entity>-->
+
+
+    <!--    Magic box -->
+    <!--        <a-entity geometry="primitive:box;depth:5;height:5;width:5" material="color:green" position="0 0 -10">-->
+
+    <!--                Disappearing Box -->
+    <!--            <a-animation attribute="visible" dur="5000" from="true" to="false"></a-animation>-->
+
+    <!--                Fade Out Box
+     <a-animation attribute="material.opacity" dur="3000" from="1" to="0.1"></a-animation>-->
+
+    <!--        </a-entity>-->
+
+
+    <a-sky color="indigo"></a-sky>
+    <!--    <a-sky src="clouds.jpg"></a-sky>-->
+    <!--    <a-sky src="#dahlia"></a-sky>-->
 
 
     <!--    <a-sphere radius="3" opacity=".7" color="yellow"></a-sphere>-->
