@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+</head>
+
+<body>
+
+<a-scene>
+
+    <a-assets>
+
+    </a-assets>
+
+        <a-entity camera look-controls wasd-controls>
+            <a-entity geometry="primitive: ring;radiusOuter: 0.30;radiusInner: 0.20;" material="color: red;" position="0 0 -3" cursor="maxDistance: 30;fuse: true">
+
+                <a-animation begin="click" attribute="scale" easing="ease-in" fill="backwards" from="0.1 0.1 0.1" to="1 1 1" dur="200"></a-animation>
+
+                <a-animation begin="cursor-fusing" attribute="scale" easing="ease-in" fill="forwards" from="1 1 1" to="0.1 0.1 0.1"></a-animation>
+
+
+            </a-entity>
+        </a-entity>
+
+
+
+    <a-sky src="clouds.jpg"></a-sky>
+
+
+</a-scene>
+
+<script src="myscript.js">
+
+</script>
+
+</body>
+
+</html>
